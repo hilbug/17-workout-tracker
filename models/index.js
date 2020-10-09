@@ -4,8 +4,8 @@
 
 module.exports = {
     // Key: require("./ModelName");
-    Exercise: require("./Exercise"),
-    Workout: require("./Workout")
+    Exercise: require("./exerciseModel"),
+    Workout: require("./workoutModel")
   };
 
 // when requiring it for apis: 

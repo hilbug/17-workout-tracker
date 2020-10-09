@@ -1,7 +1,7 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "17-workout-tracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "A workout tracker app using Node, Express, MongoDB, and Mongoose.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,11 +9,19 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hilbug/17-workout-tracker.git"
+  },
+  "author": "Hilary Ferraro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hilbug/17-workout-tracker/issues"
+  },
+  "homepage": "https://github.com/hilbug/17-workout-tracker#readme",
   "dependencies": {
-    "express": "^4.16.3",
-    "mongoose": "^5.3.16",
-    "morgan": "^1.9.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.8",
+    "morgan": "^1.10.0"
   }
 }

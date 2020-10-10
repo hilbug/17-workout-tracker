@@ -1,10 +1,11 @@
 # Workout Tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 A workout tracker app using Node, Express, MongoDB, and Mongoose. A user can create a new workout for that day or update the previous day's workout. The app has a dashboard where the user can view their workout progress over time.
 
 ### Deployed App
-Check out [Workout Tracker]() on Heroku!
+Check out [Workout Tracker](https://young-reef-00567.herokuapp.com/) on Heroku!
 
 ### App Preview
 ![Fitness Tracker](https://user-images.githubusercontent.com/65197724/95664191-847cfd00-0b13-11eb-8e62-79c49216a2ab.gif)
@@ -14,7 +15,7 @@ Check out [Workout Tracker]() on Heroku!
 - JavaScript
 - Express
 - Mongoose
-- MongoDB
+- MongoDB Atlas
 - Heroku
 - Nodemon
 
@@ -37,3 +38,6 @@ The user should be able to:
   - View the combined weight of multiple exercises on the `stats` page.
 ```
 
+## Future Development
+- Allow a user to edit or remove workouts for a specific day
+- Beautify the UI

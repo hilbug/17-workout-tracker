@@ -1,4 +1,4 @@
-const router = require("express").Router();
+const apiRouter = require("express").Router();
 
 const db = require("../models");
 
@@ -15,7 +15,7 @@ Routes from public/api.js are:
 */
 
 // 1 - get last work out
-router.get("/api/workouts", (req, res) => {
+apiRouter.get("/api/workouts", (req, res) => {
   db.Workout.find({})
     .sort({ date: -1 })
     .then(dbWorkout => {
@@ -28,7 +28,7 @@ router.get("/api/workouts", (req, res) => {
 });
 
 // 2 - get all workout data from back-end
-router.get("/api/workouts/range", (req, res) => {
+apiRouter.get("/api/workouts/range", (req, res) => {
   db.Workout.find({})
     .then(dbWorkout => {
       res.json(dbWorkout);
@@ -42,7 +42,7 @@ router.get("/api/workouts/range", (req, res) => {
 // 3 - create workout
 // when new workout is clicked, this is adding an entry to the db with no exercises
 // the url at this point is http://localhost:3000/?id=<the id of the creatd workout>
-router.post("/api/workouts", ({ body }, res) => {
+apiRouter.post("/api/workouts", ({ body }, res) => {
   db.Workout.create(body)
     .then(dbWorkout => {
       res.json(dbWorkout);
@@ -55,7 +55,7 @@ router.post("/api/workouts", ({ body }, res) => {
 
 // 4 - add exercise to the workout
 // need to figure out how to add the exercise to the workout ID that was created above
-router.put("/api/workouts/:id", (req, res) => {
+apiRouter.put("/api/workouts/:id", (req, res) => {
   const { id } = req.params;
 
   // find the document based on req.params.id
@@ -78,5 +78,5 @@ router.put("/api/workouts/:id", (req, res) => {
     });
 });
 
-module.exports = router;
+module.exports = apiRouter;
 

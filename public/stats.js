@@ -8,7 +8,6 @@ fetch("/api/workouts/range")
     populateChart(data);
   })
   .catch(err => {
-    res.status(400).json(err);
     console.log(err);
   });
 
@@ -184,6 +183,7 @@ function populateChart(data) {
   });
 }
 
+/*
 function formatDate(date) {
   const options = {
     weekday: "long",
@@ -194,6 +194,7 @@ function formatDate(date) {
 
   return new Date(date).toLocaleDateString(options);
 }
+*/
 
 function duration(data) {
   let durations = [];

@@ -37,6 +37,7 @@ function generatePalette() {
   return arr;
 }
 
+// populate chart
 function populateChart(data) {
   let durations = duration(data);
 
@@ -182,8 +183,7 @@ function populateChart(data) {
     }
   });
 }
-
-/*
+// format date function from workout.js
 function formatDate(date) {
   const options = {
     weekday: "long",
@@ -194,8 +194,8 @@ function formatDate(date) {
 
   return new Date(date).toLocaleDateString(options);
 }
-*/
 
+// total duration data for pie chart
 function duration(data) {
   let durations = [];
 
@@ -208,6 +208,7 @@ function duration(data) {
   return durations;
 }
 
+// durationMap so chart display is accurate
 function durationMap(data) {
   let durationsMap = [];
 
@@ -224,6 +225,7 @@ function durationMap(data) {
   return durationsMap.slice(Math.max(durationsMap.length - 10, 0));
 }
 
+// weight so chart display is accurate
 function weightMap(data) {
   let weightsMap = [];
 
@@ -240,7 +242,7 @@ function weightMap(data) {
   return weightsMap.slice(Math.max(weightsMap.length - 10, 0));
 }
 
-
+// total weight data for pie chart
 function calculateTotalWeight(data) {
   let total = [];
 
@@ -253,6 +255,7 @@ function calculateTotalWeight(data) {
   return total;
 }
 
+// function for workout names
 function workoutNames(data) {
   let workouts = [];
 

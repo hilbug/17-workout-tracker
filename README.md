@@ -20,8 +20,9 @@ Check out [Workout Tracker](https://young-reef-00567.herokuapp.com/) on Heroku!
 - Nodemon
 
 ## Honorable Mentions
-- Starter code provided by Trilogy Ed
+- Starter code provided by Trilogy Ed. However, I updated the code so that the chart information correctly displayed date with total duraction and total weight.
 - Thanks to Mike, Scott, and Kemp for their assistance with routes and model design
+- Thanks to Kemp for assistance on virtuals and map functions
 
 ## User Story
 ```

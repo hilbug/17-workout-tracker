@@ -13,6 +13,7 @@ Check out [Workout Tracker](https://young-reef-00567.herokuapp.com/) on Heroku!
 ### Technologies Used
 - HTML/CSS
 - JavaScript
+- ChartJS
 - Express
 - Mongoose
 - MongoDB Atlas
